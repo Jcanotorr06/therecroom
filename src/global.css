@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.breaking{
+    border: 1px solid orange;
+}
+
+.mw-64{
+    max-width: 25rem;
+}
+
+.w-100{
+    width: 30rem;
+}
+
+.shadow-custom{
+    -webkit-box-shadow: 0px 15px 28px -4px rgba(0,0,0,0.86); 
+    box-shadow: 0px 15px 28px -4px rgba(0,0,0,0.86);
+}
+
+.bg-yello{
+    background-color: yellow;
+}
+
+.rot{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    animation-timing-function: linear;
+    transition: 0.5s;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        opacity: 100%;
+    }
+    50%{
+        opacity: 10%;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 100%;
+    }
+}
+
+.tran{
+    opacity: 1;
+    transition: all 0.25s linear 5s;
+}
+
+@media (min-width: 1280px) {
+    .mw-64{
+        max-width: 20rem;
+    }
+ }
+@media (max-width: 475px) {
+    .mw-64{
+        max-width: 20rem;
+    }
+}
